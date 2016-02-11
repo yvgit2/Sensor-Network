@@ -33,7 +33,7 @@ void data_read(int *p)
   	do{
     	PinState = digitalRead(ClockPin);
   	}while(PinState);
-  	delayMicroseconds(100);
+  	//delayMicroseconds(100); //fonctionne just first value hight
   	PinState = digitalRead(DataPin);
   	if(1 == PinState)
      	tempData = (tempData<<1 & 0xfe)+1;

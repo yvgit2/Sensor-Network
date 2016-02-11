@@ -18,7 +18,7 @@ void setup() {
   pinMode(ClockPin,INPUT);
   pinMode(TestPin,OUTPUT);
   digitalWrite(TestPin, HIGH);
-  delay(100);
+  //delay(100); //work without delay(100);
 }
  
 void data_read(int *p)
